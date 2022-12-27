@@ -18,5 +18,9 @@ def login():
 def hello():
     return render_template('hello.html')
 
+@app.route('/')
+def color():
+    return render_template('hello.html')
+
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = True)    
